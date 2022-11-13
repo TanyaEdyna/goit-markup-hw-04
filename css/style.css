@@ -312,23 +312,76 @@ padding-top: 0;
    display: inline-block;
    width: 44px;
    height: 44px;
-   background-color: palegoldenrod;
    background-size: contain;
    border-radius: 50%;
  } 
+
+ .team-item-icon:hover {
+   background-color: var(--accent-color);
+   cursor: pointer;
+ }
  .team-soc-link {
    display: flex;
    align-items: center;
    justify-content: center;
-
+   width: 100%;
+   height: 100%;
  }
- 
+ .team-soc-icon {
+   fill: #AFB1B8;
+ }
+ /* CLIENTS */
+ .client-title {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 1.16;
+   letter-spacing: 0.03em;
+   color: var(--title-color);
+   padding-bottom: 50px;
+   text-align: center;
+ }
+ .client-list {
+   display: flex;
+   gap: 30px;
+   justify-content: center;
+   
+ }
+ .client-item {
+   width: 170px;
+   height: 92px;
+   border-radius: 4px;
+ }
+
+ .client-link {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid #AFB1B8;
+   border-radius: 4px;
+   width: 100%;
+   height: 100%;
+ }
+ .client-icon {
+   fill: #AFB1B8;
+ }
+
+ .client-link:hover,
+ .client-link:focus {
+    border-color: var(--accent-color);
+ }
+ .client-icon:hover {
+    fill:currentColor;  
+      
+ }
+ .client-icon:hover {
+   fill: var(--accent-color);
+ }
+
  /* FOOTER */
  .footer {
     background-color: var(--hero-footer-background);
  }
  .footer > .container {
-   display: block;
    padding-top: 60px;
    padding-bottom: 60px;
    margin: 0 auto;
@@ -337,7 +390,7 @@ padding-top: 0;
    display: block;
    margin-bottom: 20px;
  }
- .container > .footer-logo {
+ .footer-logo {
    font-family: 'Raleway', sans-serif;
    color: var(--white-color);
    font-weight: 700;
@@ -367,7 +420,51 @@ padding-top: 0;
 .footer-contacts {
    color: rgba(255, 255, 255, 0.6);
 }
+.footer-wrap {
+   display: flex;
+}
+.soc-content {
+   /* align-items: baseline; */
+}
+.footer-soc-title {
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 1.14px;
+   letter-spacing: 0.03em;
+   text-transform: uppercase;
+   color: var(--white-color);
+   padding-bottom: 20px;
+  
+}
+.footer-soc-list {
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+}
+.footer-soc-item {
+   width: 44px;
+   height: 44px;
+   background: rgba(255, 255, 255, 0.1);
+   border-radius: 50%;
 
+}
+.footer-soc-item:hover {
+   background: var(--accent-color);
+}
+.footer-soc-link {
+  
+   display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+}
+.footer-soc-icon {
+   fill: var(--white-color);
+}
+.address-content {
+   margin-right: 70px;
+}
 
 /* PORTFOLIO */
 
